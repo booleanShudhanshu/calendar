@@ -1,0 +1,33 @@
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  padding: 10px;
+  height: 100px;
+  width: "14%";
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.calendar th {
+  font-weight: bold;
+}
+
+.calendar td {
+  font-size: 14px;
+  height: 100px;
+  width: "14%";
+}
+
+@media (min-width: 576px) {
+  .calendar table {
+    table-layout: fixed;
+  }
+
+  .calendar td {
+    height: 100px;
+  }
+}

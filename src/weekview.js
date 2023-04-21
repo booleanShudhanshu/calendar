@@ -6,13 +6,13 @@ const Weekview = ({ startOfWeek }) => {
   }, [startOfWeek]);
   function populateCalendar(date) {
     const daysOfWeek = [
+      "Sunday",
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
       "Saturday",
-      "Sunday",
     ];
     const today = new Date(date);
     let startOfWeek = new Date(
@@ -60,13 +60,13 @@ const Weekview = ({ startOfWeek }) => {
         <thead>
           <tr>
             <th></th>
-            <th id="day1">Monday</th>
-            <th id="day2">Tuesday</th>
-            <th id="day3">Wednesday</th>
-            <th id="day4">Thursday</th>
-            <th id="day5">Friday</th>
-            <th id="day6">Saturday</th>
-            <th id="day7">Sunday</th>
+            <th id="day1">Sunday</th>
+            <th id="day2">Monday</th>
+            <th id="day3">Tuesday</th>
+            <th id="day4">Wednesday</th>
+            <th id="day5">Thursday</th>
+            <th id="day6">Friday</th>
+            <th id="day7">Saturday</th>
           </tr>
         </thead>
         <tbody>
